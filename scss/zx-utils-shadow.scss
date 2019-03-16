@@ -1,0 +1,8 @@
+/// A mixin that sets the box-shadow in a browser independent way.
+/// @param {string} $hShadow The horizontal shadow to set.
+/// @param {string} $vShadow The vertical shadow to set.
+@mixin zx-box-shadow($shadow) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
